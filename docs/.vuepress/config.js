@@ -1,7 +1,7 @@
 import { viteBundler } from '@vuepress/bundler-vite'
 import { defineUserConfig } from 'vuepress'
-import { defineNotesConfig, plumeTheme } from 'vuepress-theme-plume'
-import { enNotes, koNotes } from './route.js'
+import { plumeTheme } from 'vuepress-theme-plume'
+import { enCollections, koCollections } from './route.js'
 
 export default defineUserConfig({
   head: [
@@ -59,7 +59,7 @@ export default defineUserConfig({
             link: '/blog/'
           }
         ],
-        notes: enNotes
+        collections: enCollections
       },
       '/ko/': {
         selectLanguageName: '한국어',
@@ -77,7 +77,7 @@ export default defineUserConfig({
             link: '/ko/blog/'
           }
         ],
-        notes: koNotes,
+        collections: koCollections,
       },
     },
     social: [
@@ -88,9 +88,6 @@ export default defineUserConfig({
       copyright: 'Copyright © 2024-Present All Rights Reserved.'
     },
     outline: [1, 6],
-    blog: {
-      exclude: ['.vuepress/', '**/README.md'],
-    },
     lastUpdated: false
   }),
   bundler: viteBundler(),

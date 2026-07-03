@@ -5,7 +5,7 @@ permalink: /ko/documents/services/ship-upgrading/
 ---
 # 선박 증축
 
-::: demo-wrapper img no-padding
+::: window img no-padding
 ![](./ship-upgrading.jpg)
 :::
 
