@@ -52,7 +52,7 @@ export default defineUserConfig({
           },
           {
             text: 'Feature Guide',
-            link: '/guides/ship-upgrading/'
+            link: '/features/home/'
           },
           {
             text: 'Posts',
@@ -69,8 +69,8 @@ export default defineUserConfig({
             link: '/ko/get-started/introduction/'
           },
           {
-            text: '사용 가이드',
-            link: '/ko/guides/ship-upgrading/'
+            text: '기능 가이드',
+            link: '/ko/features/home/'
           },
           {
             text: '포스트',
